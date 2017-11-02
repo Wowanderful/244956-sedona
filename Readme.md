@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Владимир Кравченко](https://up.htmlacademy.ru/htmlcss/19/user/244956).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Лысенкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
