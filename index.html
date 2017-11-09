@@ -7,7 +7,7 @@
 
  <body>
  	<header class="main-header">
- 		<div class="header-logo"><img src="http://placehold.it/150x100"></div>
+    	<div class="header-logo"><img src="img/logo-sedona.png" width="66px" height="56px" alt="Sedona logo"></div>
  		<nav class="header-nav">
  			<ul>
  				<li><a href="#">Информация</a></li>
@@ -21,23 +21,26 @@
  <main class="container">
  	<h1 class="invisible">Седона</h1>
  	<section class="greetings">
- 		<p><span class="welcome">Welcome</span>
- 		<span class="italyc">to the gorgeous</span>
- 		<span class="sedona-capitalizaed">Sedona</span></p>
- 		<cite>"Because the Grand Canyon sucks!"</cite>
+ 		<p><img src="img/Welcome.png" alt="Welcome" width="188px" height="45px"></p>
+ 		<p><img src="img/tothegorgeous.png" alt="to the gorgeous" width="170px" height="20px"></p>
+ 		<p><img src="img/Sedona.png" alt="Sedona" width="458px" height="78px"></p>
+ 		<p><img src="img/sucks.png" alt="Because the Grand Canyon sucks!" width="296px" height="80px"></p>
  		<p><b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b></p>
   	</section>
 
   	<section class="tips">
   		<h2 class="invisible">Советы</h2>
   		<ul>
-  			<li><h3>Жилье</h3>
+  			<li><img src="img/icon-1.svg" width="70px" height="70px">
+  				<h3>Жилье</h3>
   				<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
   			</li>
-  			<li><h3>Еда</h3>
+  			<li><img src="img/icon-3.svg" width="70px" height="70px>
+  				<h3>Еда</h3>
   				<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
   			</li>
-  			<li><h3>Сувениры</h3>
+  			<li><img src="img/icon-2.svg" width="70px" height="70px>
+  				<h3>Сувениры</h3>
   				<p>Не только китайского, но и местного производства</p>
   			</li>
   		</ul>
@@ -49,12 +52,12 @@
   			<li>
   				<h3>Настоящий городок</h3>
   				<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-  				<p><img src="http://placehold.it/150x100"></p>
+  				<p><img src="img/realtown.jpg" width="511px" height="256px" alt="Фото настоящего городка"></p>
   			</li>
   			<li>
   				<h3>Там есть мост дьявола</h3>
   				<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-  				<p><img src="http://placehold.it/150x100"></p>
+  				<p><img src="img/devilsbridge.jpg" width="511px" height="256px" alt="Фото Моста дьявола"></p>
   			</li>
   			<li>
   				<h3>Небольшая площадь</h3>
@@ -74,31 +77,33 @@
   	<section class="hotel-order">
   		<span class="interested">Заинтересовались?</span>
   			<span>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения госиниц в Седоне</span>
-        <p><img src="http://placehold.it/150x100"></p>
-  		<form class="hotel-order-form">
+        
+  		<form class="hotel-order-form" action="#" method="get">
   			<h3 class="order-form-title">Поиск гостиницы в Седоне</h3>
-  			<form action="#" method="get">
-        <label for="check-in-date">Дата заезда:</label>
-        <input type="text" name="check-in-date" id="check-in-date" value="24 апреля 2017">
+  			<label for="check-in-date">Дата заезда:</label>
+        <input type="text" name="check-in-date" id="check-in-date" value="24 апреля 2017"><img src="img/calendar.svg">
         <label for="check-out-date">Дата выезда:</label>
         <input type="text" name="check-out-date" id="check-out-date" value="4 июля 2017">
-  			<label for="grown-ups">Взрослые:</label>
+        <img src="img/calendar.svg">
+  		<label for="grown-ups">Взрослые:</label>
         <input type="number" name="grown-ups" id="grown-ups" min="1" step="1" value="2">
         <label for="kids">Дети:</label>
         <input type="number" name="kids" id="kids" min="0" step="1" value="0">			
-  			<input type="submit" value="Найти">
+  		<input type="submit" value="Найти">
       </form>
   		</section>
+
+  	<div class="map"><img src="img/map.png" alt="Карта" width="1718px" height="748px"></div>
 
   	<footer class="page-footer">
   		<p><a class="invitation-link" href="#">#Visitsedona</a></p>
   		<ul class="footer-social">
-  			<li><a class="social-button" href="#">Твиттер</a></li>
-			<li><a class="social-button" href="#">Фейбук</a></li>
-			<li><a class="social-button" href="#">Ютуб</a></li>
+  			<li><a class="social-button" href="http://twitter.com"><img src="img/twitter.svg" alt="Твиттер"></a></li>
+			<li><a class="social-button" href="http://facebook.com"><img src="img/fb-icon.svg" alt="Фейсбук"></a></li>
+			<li><a class="social-button" href="http://youtube.com"><img src="img/youtube.svg" alt="Ютуб"></a></li>
 		</ul>
 		<p class="copyright">
-				<b>Website by</b><a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+				<b>Website by</b><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115px" height="41px" alt="HTML Academy"></a>
 			</p>
 		</footer>   
 
