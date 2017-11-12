@@ -19,17 +19,15 @@
  	</header>
 
  <main class="container">
- 	<h1 class="invisible">Седона</h1>
+ 	<h1 class="visually-hidden">Седона</h1>
  	<section class="greetings">
- 		<p><img src="img/Welcome.png" alt="Welcome" width="188px" height="45px"></p>
- 		<p><img src="img/tothegorgeous.png" alt="to the gorgeous" width="170px" height="20px"></p>
- 		<p><img src="img/Sedona.png" alt="Sedona" width="458px" height="78px"></p>
- 		<p><img src="img/sucks.png" alt="Because the Grand Canyon sucks!" width="296px" height="80px"></p>
+ 		<p>
+ 			<img src="img/welcometosedona.jpg" alt="Welcome to the gorgeous Sedona! Because the Grand Canyon sucks!" width="1200px" height="807px"></p>		
  		<p><b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b></p>
   	</section>
 
   	<section class="tips">
-  		<h2 class="invisible">Советы</h2>
+  		<h2 class="visually-hidden">Советы</h2>
   		<ul>
   			<li><img src="img/icon-1.svg" width="70px" height="70px">
   				<h3>Жилье</h3>
@@ -47,7 +45,7 @@
   	</section>
 
   	<section class="advantage-list">
-  		<h2 class="invisible">Список преимуществ</h2>
+  		<h2 class="visually-hidden">Список преимуществ</h2>
   		<ol> 
   			<li>
   				<h3>Настоящий городок</h3>
@@ -74,23 +72,25 @@
   		</ol>
   	</section>
 
-  	<section class="hotel-order">
-  		<span class="interested">Заинтересовались?</span>
-  			<span>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения госиниц в Седоне</span>
-        
-  		<form class="hotel-order-form" action="#" method="get">
-  			<h3 class="order-form-title">Поиск гостиницы в Седоне</h3>
-  			<label for="check-in-date">Дата заезда:</label>
-        <input type="text" name="check-in-date" id="check-in-date" value="24 апреля 2017"><img src="img/calendar.svg">
-        <label for="check-out-date">Дата выезда:</label>
-        <input type="text" name="check-out-date" id="check-out-date" value="4 июля 2017">
-        <img src="img/calendar.svg">
-  		<label for="grown-ups">Взрослые:</label>
-        <input type="number" name="grown-ups" id="grown-ups" min="1" step="1" value="2">
-        <label for="kids">Дети:</label>
-        <input type="number" name="kids" id="kids" min="0" step="1" value="0">			
-  		<input type="submit" value="Найти">
-      </form>
+  	<section class="invitation">
+  		<p class="interested">Заинтересовались?</p>
+  			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения госиниц в Седоне</p>
+  			<p><button class="button button-brown">Поиск гостиницы в Седоне</button></p>
+  		</section>
+
+  		<section class="modal-form">
+        	<form class="hotel-order-form" action="https://echo.htmlacademy.ru" method="post">
+  				<p><label for="hotel-order-date">Дата заезда:</label>
+        		<input type="date" name="check-in-date" id="hotel-order-date" value="" placeholder="24 апреля 2017"><img src="img/calendar.svg"></p>
+        		<p><label for="hotel-order-checkout">Дата выезда:</label>
+        		<input type="date" name="check-out-date" id="hotel-order-checkout" value="" placeholder="4 июля 2017">
+        		<img src="img/calendar.svg"></p>
+  				<p><label for="hotel-order-grownups">Взрослые:</label>
+       			<input type="number" name="grown-ups" id="hotel-order-grownups" min="1" step="1" value="2"></p>
+        		<p><label for="hotel-order-kids">Дети:</label>
+        		<input type="number" name="kids" id="hotel-order-kids" min="0" step="1" value="0"></p>			
+  				<button type="submit" class="button button-blue">Найти</button>
+      		</form>
   		</section>
 
   	<div class="map"><img src="img/map.png" alt="Карта" width="1718px" height="748px"></div>
@@ -104,7 +104,7 @@
 		</ul>
 		<p class="copyright">
 				<b>Website by</b><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115px" height="41px" alt="HTML Academy"></a>
-			</p>
+		</p>
 		</footer>   
 
   </body>

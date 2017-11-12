@@ -19,29 +19,39 @@
  	</header>
 
  	<main class="container">
- 		<h1 class="invisible">Список гостиниц</h1>
+ 		<h1 class="visually-hidden">Список гостиниц</h1>
+
  		<section class="filter-forms">
- 			<div class="form-section">
- 				<p>Инфраструтура:</p>
- 				<label><input type="checkbox" name="pool" checked>Бассейн</label>
- 				<label><input type="checkbox" name="parking">Парковка</label>
- 				<label><input type="checkbox" name="wi-fi">Wi-fi</label>
- 			</div>
- 			<div class="form-section">
- 				<p>Тип жилья:</p>
- 				<label><input type="checkbox" name="hotel" checked>Гостиница</label>
- 				<label><input type="checkbox" name="motel" checked>Мотель</label>
- 				<label><input type="checkbox" name="appts" checked>Аппартаменты</label>
- 			</div>
- 		<div class="form-section">
- 			<p>Стоимость в сутки:</p>
- 			<span>От 0</span><span>До 3000</span>
- 			<input type="range" min="0" max="3000">
+ 			<form class="filter-hotel-forms" action="https://echo.htmlacademy.ru" method="post" oninput="priceoutput.value=pricecount.value">
+ 			<fieldset class="filter-forms-checkbox">
+ 				<legend>Инфраструтура:</legend>
+ 				<p><input class="visually-hidden" type="checkbox" name="pool" id="filter-pool" checked>
+ 				<label for="filter-pool">Бассейн</label></p>
+ 				<p><input class="visually-hidden" type="checkbox" name="parking" id="filter-parking">
+ 				<label for="filter-parking">Парковка</label></p>
+ 				<p><input class="visually-hidden" type="checkbox" name="wi-fi" id="filter-wifi">
+ 				<label for="filter-wifi">Wi-fi</label></p>
+ 			</fieldset>
+ 			<fieldset class="filter-forms-checkbox">
+ 				<legend>Тип жилья:</legend>
+ 				<p><input class="visually-hidden" type="checkbox" name="hotel" id="filter-hotel" checked>
+ 				<label for="filter-hotel">Гостиница</label></p>
+ 				<p><input class="visually-hidden" type="checkbox" name="motel" id="filter-motel" checked>
+ 				<label for="filter-motel">Мотель</label></p>
+ 				<p><input class="visually-hidden" type="checkbox" name="appts" id="filter-appts" checked>
+ 				<label for="filter-appts">Аппартаменты</label>
+ 			</fieldset>
+ 		<div class="price-form">
+ 			<label for="hotel-price">Стоимость в сутки:</label>
+ 			<span>От 0 </span><span>До </span><output name="priceoutput"></output>	
+ 			<input type="range" min="0" max="3000" id="pricecount">
  		</div>
+ 		<p><button type="submit">Показать</button></p>
+ 	</form>
  	</section>
 
  	<article class="search-results">
- 		<h2 class="invisible">Результаты поиска</h2>
+ 		<h2 class="visually-hidden">Результаты поиска</h2>
  		<ul class="search-results-filter">
  			<li><b>Найдено: 3</b></li>
  			<li>Сортировка:</li>
@@ -49,17 +59,17 @@
  			<li><a href="#">По типу</a></li>
  			<li><a href="#">По рейтингу</a></li>
  		</ul>
- 		<a href="#"><img src="img/icon-up-dir.svg" alt="up"></a>
- 		<a href="#"><img src="img/icon-down-dir.svg" alt="down"></a>
+ 		<a href="#"><img src="img/icon-up-dir.svg" alt="Вверх"></a>
+ 		<a href="#"><img src="img/icon-down-dir.svg" alt="Вниз"></a>
 
  		<ul class="hotel-list">
  			<li>
- 				<h3>Amara Resort &#38 SPA</h3>
+ 				<h3 tabindex=0>Amara Resort &#38 SPA</h3>
  				<p><span>Гостиница</span><span>От 4000 Р.</span></p>
  				<img src="img/amara.jpg" alt="Amara Resort &#38 SPA">
  				<div class="stars-rating"></div>
- 				<a href="#" class="button">Подробнее</a>
- 				<a href="#" class="button-brown">Забронировать</a>
+ 				<a href="#" class="button button-blue">Подробнее</a>
+ 				<a href="#" class="button button-brown">Забронировать</a>
  				<div class="stars">
  					<img src="img/star.svg" alt="5 звезд">
  					<img src="img/star.svg">
@@ -70,12 +80,12 @@
  				<div class="rating">Рейтинг: 8,5</div>
  			</li>
  			<li>
- 				<h3>Desert Quail Inn</h3>
+ 				<h3 tabindex=0>Desert Quail Inn</h3>
  				<p><span>Мотель</span><span>От 3000 Р.</span></p>
  				<img src="img/desert.jpg" alt="Desert Quail Inn">
  				<div class="stars-rating"></div>
- 				<a href="#" class="button">Подробнее</a>
- 				<a href="#" class="button-brown">Забронировать</a>
+ 				<a href="#" class="button button-blue">Подробнее</a>
+ 				<a href="#" class="button button-brown">Забронировать</a>
  				<div class="stars">
  					<img src="img/star.svg" alt="3 звезды">
  					<img src="img/star.svg">
@@ -85,12 +95,12 @@
  			</li>
 
  			<li>
- 				<h3>Villas At Poco Diablo</h3>
+ 				<h3 tabindex=0>Villas At Poco Diablo</h3>
  				<p><span>Аппартаменты</span><span>От 2000 Р.</span></p>
  				<img src="img/villas.jpg" alt="Villas At Poco Diablo">
  				<div class="stars-rating"></div>
- 				<a href="#" class="button">Подробнее</a>
- 				<a href="#" class="button-brown">Забронировать</a>
+ 				<a href="#" class="button button-blue">Подробнее</a>
+ 				<a href="#" class="button button-brown">Забронировать</a>
  				<div class="stars">
  					<img src="img/star.svg" alt="2 звезды">
  					<img src="img/star.svg">
