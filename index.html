@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
   </head>
 
  <body>
@@ -23,7 +27,9 @@
  	<section class="greetings">
  		<p>
  			<img src="img/welcometosedona.jpg" alt="Welcome to the gorgeous Sedona! Because the Grand Canyon sucks!" width="1200px" height="807px"></p>		
- 		<p><b>Седона - небольшой городок в Аризоне, заслуживающий большего!</b></p>
+ 		<p class="text-header">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+    <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон"</p>
+
   	</section>
 
   	<section class="tips">
@@ -46,27 +52,32 @@
 
   	<section class="advantage-list">
   		<h2 class="visually-hidden">Список преимуществ</h2>
-  		<ol> 
+      	<ol> 
   			<li>
   				<h3>Настоящий городок</h3>
+          <p>- №1 -</p>
   				<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-  				<p><img src="img/realtown.jpg" width="511px" height="256px" alt="Фото настоящего городка"></p>
+  				<p><img src="img/realtown.jpg" width="800px" height="400px" alt="Фото настоящего городка"></p>
   			</li>
   			<li>
   				<h3>Там есть мост дьявола</h3>
+          <p>- №2 -</p>
   				<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-  				<p><img src="img/devilsbridge.jpg" width="511px" height="256px" alt="Фото Моста дьявола"></p>
+  				<p><img src="img/devilsbridge.jpg" width="800px" height="400px" alt="Фото Моста дьявола"></p>
   			</li>
   			<li>
   				<h3>Небольшая площадь</h3>
+          <p>- №3 -</p>
   				<p>Все достопримечательности находятся очень близко</p>
   			</li>
   			<li>
   				<h3>Красивая дорога</h3>
+          <p>- №4 -</p>
   				<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
   			</li>
   			<li>
   				<h3>Мало туристов</h3>
+          <p>- №5 -</p>
   				<p>Большинство едет в Гранд-Каньон и толпится там</p>
   			</li>
   		</ol>
@@ -75,21 +86,21 @@
   	<section class="invitation">
   		<p class="interested">Заинтересовались?</p>
   			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения госиниц в Седоне</p>
-  			<p><button class="button button-brown">Поиск гостиницы в Седоне</button></p>
+  			<p><button class="button big-button-brown">Поиск гостиницы в Седоне</button></p>
   		</section>
 
   		<section class="modal-form">
         	<form class="hotel-order-form" action="https://echo.htmlacademy.ru" method="post">
   				<p><label for="hotel-order-date">Дата заезда:</label>
-        		<input type="date" name="check-in-date" id="hotel-order-date" value="" placeholder="24 апреля 2017"><img src="img/calendar.svg"></p>
+        		<input type="text" name="check-in-date" id="hotel-order-date" value="24 апреля 2017" placeholder=""><img src="img/calendar.svg"></p>
         		<p><label for="hotel-order-checkout">Дата выезда:</label>
-        		<input type="date" name="check-out-date" id="hotel-order-checkout" value="" placeholder="4 июля 2017">
+        		<input type="text" name="check-out-date" id="hotel-order-checkout" value="4 июля 2017" placeholder="">
         		<img src="img/calendar.svg"></p>
   				<p><label for="hotel-order-grownups">Взрослые:</label>
-       			<input type="number" name="grown-ups" id="hotel-order-grownups" min="1" step="1" value="2"></p>
+       			<input type="text" name="grown-ups" id="hotel-order-grownups" value="2"></p>
         		<p><label for="hotel-order-kids">Дети:</label>
-        		<input type="number" name="kids" id="hotel-order-kids" min="0" step="1" value="0"></p>			
-  				<button type="submit" class="button button-blue">Найти</button>
+        		<input type="text" name="kids" id="hotel-order-kids"  value="0"></p>			
+  				<button type="submit" class="button big-button-blue">Найти</button>
       		</form>
   		</section>
 
@@ -98,13 +109,13 @@
   	<footer class="page-footer">
   		<p><a class="invitation-link" href="#">#Visitsedona</a></p>
   		<ul class="footer-social">
-  			<li><a class="social-button" href="http://twitter.com"><img src="img/twitter.svg" alt="Твиттер"></a></li>
-			<li><a class="social-button" href="http://facebook.com"><img src="img/fb-icon.svg" alt="Фейсбук"></a></li>
-			<li><a class="social-button" href="http://youtube.com"><img src="img/youtube.svg" alt="Ютуб"></a></li>
+  			<li><a class="social-button" href="http://twitter.com" aria-label="Твиттер"></a></li>
+			<li><a class="social-button" href="http://facebook.com" aria-label="Фейсбук"></a></li>
+			<li><a class="social-button" href="http://youtube.com" aria-label="Ютуб"></a></li>
 		</ul>
-		<p class="copyright">
-				<b>Website by</b><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115px" height="41px" alt="HTML Academy"></a>
-		</p>
+		<div class="copyright">
+				<span>Website by</span><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115px" height="41px" alt="HTML Academy"></a>
+		</div>
 		</footer>   
 
   </body>
