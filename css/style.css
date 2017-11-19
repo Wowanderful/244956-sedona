@@ -162,6 +162,7 @@ ol {
 	border: 2px solid #e5e5e5;
 }
 
+
 /* ВТорая страница */
 
 .filter-forms {
@@ -214,6 +215,18 @@ ol {
 .search-results-filter .filter-active {
 	color: #81b3d2;
 	border: none;
+}
+
+.search-results path:hover {
+	fill:#81b3d2;
+}
+
+.search-results path:active {
+	fill: #000000;
+}
+
+.search-results .triangle-active {
+	fill:#81b3d2;
 }
 
 .filter-name {
@@ -294,30 +307,30 @@ ol {
 	color: #88b6d1;
 }
 
-.footer-social li:first-child {
-	background-image: url("../img/twitter.svg");
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
+.footer-social svg  {
+	margin-left: 15px;
+	margin-top: 15px;
 }
 
-.footer-social li:nth-child(2n) {
-	background-image: url("../img/fb-icon.svg");
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
+.footer-social path:active {
+	fill: #88b6d1 ;
 }
 
-.footer-social li:last-child {
-	background-image: url("../img/youtube.svg");
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-}
-
-.copyright span {
+.copyright p {
 	margin-right: 5px;
 }
 
-.copyright a:hover {
-	color: blue;
+.copyright svg {
+	width: 115px;
+	height: 41px;
+}
+
+.copyright svg path:hover {
+	fill: #93bed8;
+}
+
+.copyright svg path:active {
+	fill: #c9c8c8;
 }
 
 .visually-hidden {
