@@ -68,23 +68,38 @@ ol {
 	font-size: 21px;
 	}
 
-.tips h3,
-.advantage-list h3 {
-	font-weight: 700;
+.main-info h3{ 
+ 	font-weight: 700;
 	font-size: 21px;
 	color: #000000;
 }
 
-.advantage-list li:first-child,
-.advantage-list li:nth-child(2) {
+.main-info li:first-child li {
+	background-color: #ffffff;
+	color: #000000;
+}
+.main-info li:first-child li h3 {
+	color: #000000;
+}
+
+.main-info li:nth-child(2),
+.main-info li:nth-child(3) {
 	background-color: #81b3d2;
 	color: #ffffff;
 }
+.main-info li:nth-child(2) h3,
+.main-info li:nth-child(3) h3 {
+	color: #ffffff	
+}
 
-.advantage-list li:nth-child(3),
-.advantage-list li:nth-child(4),
-.advantage-list li:nth-child(5) {
+.main-info li:nth-child(4) {
 	background-color: #eeeeee;
+}
+
+.img-box {
+	width: 70%;
+	max-height: 254px;
+	overflow: hidden;
 }
 
 .interested {
@@ -168,6 +183,7 @@ ol {
 .filter-forms {
 	background-color: rgb(72, 79, 86);
 	background-image: url("../img/background2.jpg");
+	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: center;
 
@@ -282,6 +298,9 @@ ol {
 	color: #cacaca;
 }
 
+
+/*ФУТЕР*/
+
 .page-footer {
 	background-color: #ffffff;
 }
@@ -334,16 +353,206 @@ ol {
 }
 
 .visually-hidden {
-	font-size: 0px;
+	position: absolute;
+  	left:-999em;
 }
 
 
 /*
 1) шрифт в формах
 2) псевдоэлементы в формах
-3) интерактивные соц кнопки и логотип, интерактивные svg
+3) visually-hidden 
 
 */
+
+
+/*СЕТКА*/
+
+.main-wrap {
+	min-width: 768px;
+	max-width: 1200px;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	background: transparent;
+
+	display: flex;
+	flex-direction: column;
+
+	padding: 0;
+}
+
+.main-header {
+	/*background: blue;*/
+	padding: 0;
+	margin-bottom: 0;
+}
+
+.header-nav ul {
+	display: flex;
+	/*background: brown;*/
+	flex-direction: row;
+	min-height: 55px;
+	margin: 0 0;
+	padding: 0 0;
+}
+
+.header-nav li {
+	flex-basis: 20%;
+	margin-left: 6%;
+}
+
+.header-nav li:nth-child(1),
+.header-nav li:nth-child(2) {
+	text-align: left;
+	padding-top: 15px;
+	
+}
+
+.header-nav li:nth-child(3),
+.header-nav li:last-child {
+	text-align: right;
+	padding-top: 15px;
+
+}
+
+.header-nav li:nth-child(4) {
+	margin-right: 6%;
+}
+
+.container {
+	/*background-color: green;*/
+	padding: 0;
+}
+
+.greetings p {
+	max-height: 620px;
+}
+
+.greetings .text-header {
+	margin: 0 auto;
+	max-width: 440px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.greetings .sub-header {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 500px;
+}
+
+.main-info {
+	padding-left: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.main-info li:nth-child(2) {
+	order: -1;
+}
+
+.main-info li:first-child .tips {
+	/*background: green;*/
+	display: flex;
+	justify-content: row;
+}
+
+.main-info li:nth-child(2) {
+	order: -1;
+}
+
+.main-info > li:last-child {
+	display: flex;
+}
+
+.invitation {
+	text-align: center;
+	/*border: 1px solid black;*/
+	padding-bottom: 0;
+}
+
+.invitation p:last-child {
+	margin-top:50px;
+	margin-bottom: 0;
+}
+
+.map {
+	width: 100%;
+	height: 475px;
+	background-color: #ffffff;
+	background-image: url("../img/map.jpg");
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+
+.page-footer {
+	/*background-color: blue;*/
+	display: flex;
+	justify-content: space-around;
+}
+
+.page-footer p,
+.page-footer .footer-social,
+.page-footer .copyright {
+	flex-basis: 33%;
+	text-align: center;
+	vertical-align: middle;
+	/*border: 1px solid black;*/
+}
+
+/* 2nd page */
+
+.filter-hotel-forms {
+	display: flex;
+	justify-content: space-around;
+}
+
+.search-results-filter {
+	display: flex;
+	justify-content: space-between;
+}
+
+.search-results-filter li:last-child {
+	margin-left: auto;
+	margin-right: 6%;
+}
+
+.search-results-filter li:last-child {
+	margin-left: 6%;
+}
+
+.search-results-filter li {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.hotel-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.hotel-list li {
+	display: flex;
+}
+
+.hotel-list li div:first-child {
+	padding-top: 3%;
+}
+
+.hotel-list li div:nth-child(2) {
+	margin-left: 3%;
+}
+
+.hotel-list li div:last-child {
+	margin-left: auto;
+	margin-right: 6%;
+}
+
+
+
+
 
 
 
