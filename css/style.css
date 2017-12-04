@@ -504,7 +504,7 @@ margin-left: auto;
 }
 
 .modal-hide {
-	animation: slidedown 1.5s;
+	animation: slidedown 0.7s;
 	opacity: 0;
 	}
 
@@ -514,22 +514,12 @@ margin-left: auto;
 		transform: translateY(0);
 		opacity: 1;
 		}	
-	50% {
-		-webkit-transform: translateY(-200px);
-		transform: translateY(-200px);
-		opacity: 1;
-	}
-	90% {
-		-webkit-transform: translateY(-390px);
-		transform: translateY(-390px);
-		opacity: 1;
-	}
+		
 	100% {
 		-webkit-transform: translateY(-400px);
 		transform: translateY(-400px);
 		opacity: 0;
-		
-	}
+		}
 }
 
 
