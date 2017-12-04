@@ -147,7 +147,7 @@ _______________________*/
 	
 	margin-bottom: 15px;
 
-	background-color: blue;
+	background-color: #81b3d2;
 
 	background-image: url("../img/welcometosedona.jpg");
 	background-size: 100%;
@@ -194,13 +194,11 @@ _______________________*/
 /* 1 - Tips*/
 
 .main-info > li:first-child {
-	flex-basis: 333px;
+	flex-basis: 330px;
 }
 
 .tips {
 	/*background: green;*/
-min-height: 333px;
-
 display: flex;
 justify-content: flex-start;
 
@@ -210,9 +208,10 @@ padding: 0;
 
  .tips li {
 	flex-basis: 33%;
+	margin-left: 3px;
 
 	background-repeat: no-repeat;
-	background-position: 50% 25%;
+	background-position: 51% 30%;
 	background-size: 74px 74px;
 	text-align: center;
 
@@ -224,7 +223,7 @@ padding: 0;
 	margin-top: 160px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 20px;
+	margin-bottom: 25px;
 }
 
 .tips li:first-of-type {
@@ -244,7 +243,7 @@ padding: 0;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-	padding-left: 50px;
+	padding-left: 48px;
 	padding-right: 50px;
 }
 
@@ -290,7 +289,7 @@ padding: 0;
 .main-info > li:last-child h3 {
 	width: 155px;
 	margin-top: 50px;
-	margin-bottom: 21px;
+	margin-bottom: 26px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -346,6 +345,8 @@ text-align: center;
 	flex-basis: 294px;
 	
 	position: relative;
+
+	z-index: 2;
 }
 
 .invitation .interested {
@@ -393,11 +394,11 @@ text-align: center;
 	background-repeat: no-repeat;
 	background-position: 50%;
 }
+
 main iframe {
 	width: 100%;
 	height:475px;
 	border: none;
-
 }
 
 /* ___________________
@@ -406,28 +407,21 @@ ___________________*/
 
 .page-footer {
 	/*background-color: blue;*/
-	flex-basis: 120px;
+background-color: #ffffff;
+flex-basis: 121px;
+}
+	
+.footer-wrap {
+	margin-left: 132px;
+	margin-right: 100px;
+	margin-top: 20px;
 
 	display: flex;
-	justify-content: space-around;
-	
+	justify-content: flex-start;
+	align-items: center;
 
-	background-color: #ffffff
-}
-
-.page-footer p,
-.page-footer .footer-social,
-.page-footer .copyright {
-	
-	margin-left: 45px;
-
-	/*border: 1px solid black;*/
-}
-.page-footer p {
-	margin-top: 42px;
-	text-align: center;
-	
-}
+	box-sizing: border-box;
+	}
 
 .invitation-link {
 	font-size: 21px;
@@ -436,12 +430,11 @@ ___________________*/
 	color: #000000;
 }
 .footer-social {
-	margin-top: 35px;
+	margin-left: 210px;
+
 	display: flex;
-	justify-content: center;
+
 	text-align: center;
-	justify-content: center;
-	
 		}
 
 .footer-social li {
@@ -468,24 +461,18 @@ ___________________*/
 .footer-social path:active {
 	fill: #88b6d1;
 }
+
 .copyright{
-	vertical-align: middle;
-	text-align: center;
+margin-left: auto;
 }
 
-.copyright span, 
-.copyright p {
-	display: inline-block;
-	vertical-align: middle;
+.copyright .htmlac {
+	position: relative;
 }
-.copyright span {
-	margin-top: 22px;
-	margin-left: 2px;
-}
-.copyright p {
-	margin-top: 32px;
-	margin-left: 5px;
-	margin-right: 5px;
+.copyright .website {
+	position: absolute;	
+	left: 975px;
+	top: 2690px;
 }
 
 .copyright svg {
@@ -505,14 +492,48 @@ ___________________*/
 /*Модальное окно*/
 
 .modal-form {
-	width: 568px;
+	width: 560px;
 
 	position: absolute;	
-	top:2170px;
+	top:2168px;
 	left: 50%;
 
 	margin-left: -284px;
+	box-sizing: border-box;
+
 }
+
+.modal-hide {
+	animation: slidedown 1.5s;
+	opacity: 0;
+	}
+
+@keyframes slidedown {
+	0% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+		opacity: 1;
+		}	
+	50% {
+		-webkit-transform: translateY(-200px);
+		transform: translateY(-200px);
+		opacity: 1;
+	}
+	90% {
+		-webkit-transform: translateY(-390px);
+		transform: translateY(-390px);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: translateY(-400px);
+		transform: translateY(-400px);
+		opacity: 0;
+		
+	}
+}
+
+
+
 
 .modal-form .hotel-form-wrapper {
 	display: flex;
@@ -520,7 +541,8 @@ ___________________*/
 	flex-wrap: wrap;
 	font: inherit;
 	font-family: inherit;
-	padding: 55px;
+	padding-right: 45px;
+	padding-left: 57px;
 	padding-top: 37px;
 	box-sizing: border-box;
 	/*border: 1px solid red;*/
@@ -537,15 +559,21 @@ ___________________*/
 	font-weight: 700;
 	line-height: 26px;
 }
+
+.hotel-form-wrapper > p {
+margin-bottom: 18px;	
+}
+
 .hotel-form-wrapper > p:first-child {
 	margin-top: 18px;
+	margin-bottom: 18px;
 }
 .hotel-form-wrapper > p:last-child {
-	margin-top: 45px;
+	margin-top: 40px;
 }
 
 .hotel-form-wrapper > p:nth-child(4) {
-	margin-left: auto;
+	margin-left: 63px;
 }
 
 .hotel-form-wrapper label {
@@ -555,9 +583,12 @@ ___________________*/
 }
 
 .hotel-form-wrapper > p:nth-child(3) label {
-	margin-right: 30px;
+	margin-right: 28px;
 }
+.hotel-form-wrapper > p:nth-child(4) label {
+	margin-right: 15px;
 
+}
 .hotel-form-wrapper input {
 	font-size:14px;
 	font-weight: 700;
@@ -572,7 +603,9 @@ ___________________*/
 
 	height: 36px;
 	
-	padding-left: 10px;
+	box-sizing: border-box;
+	padding-left: 15px;
+
 }
 
 .hotel-order-form input:hover {
@@ -586,7 +619,8 @@ ___________________*/
 
 .hotel-form-wrapper input[name="check-in-date"],
 .hotel-form-wrapper input[name="check-out-date"] {
-	width: 335px;
+	width: 340px;
+	padding-right: 20px;
 }
 
 .hotel-form-wrapper input[name="check-out-date"] {
@@ -595,14 +629,14 @@ ___________________*/
 
 .calendar-1 {
 	position: absolute;
-	left: 475px;
-	top: 65px
+	left: 472px;
+	top: 62px
 } 
 
 .calendar-2 {
 	position: absolute;
-	left: 475px;
-	top: 130px;
+	left: 472px;
+	top: 127px;
 }
 
 .calendar-1:hover path,
@@ -618,6 +652,7 @@ fill: #81b3d2;
 input[name="grown-ups"],
 input[name="kids"] {
 	width: 37px;
+	height:36px;
 
 	padding-left: 0;
 
@@ -630,7 +665,7 @@ input[name="kids"] {
 	border:none;
 
 	width: 37px;
-	height: 38px;
+	height: 36px;
 
 	text-align: center;
 	vertical-align: top;
@@ -840,7 +875,7 @@ SECOND PAGE-----------------------
 
   	border: 8px solid #ffffff;
   	border-radius: 50%;
-  	box-shadow: 0 2px 2px 0 #ababab;
+  	box-shadow: 0 2px 0 0 #646466;
 
   	cursor: pointer;
 }
@@ -877,7 +912,7 @@ SECOND PAGE-----------------------
 		
 	background-image: url("../img/checkbox-off.svg");
 	background-repeat: no-repeat;
-	background-size: 80%;
+	background-size: 75%;
 }
 
 .filter-input:checked + label::before {
@@ -1028,7 +1063,9 @@ color: #81b3d2;
 .hotel-list li:first-child {
 	border-top: 1px solid rgb(229, 229, 229);
 }
-
+.hotel-list li:last-child {
+	margin-bottom: -12px;
+}
 .hotel-list li div:first-child {
 	margin-top: 30px;
 	margin-left: 30px;
@@ -1156,6 +1193,8 @@ input[type="checkbox"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+
 
 
 
