@@ -1,3 +1,4 @@
+
   var link = document.querySelector(".big-button-brown");
   var popup = document.querySelector(".modal-hide");
   var checkin = popup.querySelector("[name=check-in-date]");
@@ -7,7 +8,6 @@
   link.addEventListener("click", function (evt) {
     (evt).preventDefault();
     popup.classList.toggle("modal-open");
-
     checkin.focus();
   });
 
